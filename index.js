@@ -26,12 +26,11 @@
  * ```
  *
  * @param  {Function} `fn` Function from which to get arguments names.
- * @param  {Number} `max` How many characters to cut from `fn`s toString.
  * @return {Array}
  * @api public
  */
 
-module.exports = function functionArguments (fn, max) {
+module.exports = function functionArguments (fn) {
   if (typeof fn !== 'function') {
     throw new TypeError('function-arguments expect a function')
   }
@@ -42,23 +41,20 @@ module.exports = function functionArguments (fn, max) {
   // from https://github.com/jrburke/requirejs
   var reComments = /(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg
   var fnToStr = Function.prototype.toString
-  var fnStr = fnToStr.call(fn).replace(reComments, '')
-  var arrow = fnStr.indexOf('=>')
-  var isNumber = require('is-number')
+  var fnStr = fnToStr.call(fn)
+  fnStr = fnStr.replace(reComments, '') || fnStr
+  fnStr = fnStr.slice(0, fnStr.indexOf('{'))
 
-  if (fnStr[0] !== '(' && arrow) {
-    fnStr = 'function (' + fnStr.slice(0, arrow) + ')' + fnStr.slice(arrow)
-  }
-  if (isNumber(max)) {
-    max = Number(max)
-  } else {
-    max = false
-  }
-  if (max && max > fnStr.length) {
-    max = fnStr.length
-  }
+  var open = fnStr.indexOf('(')
+  var close = fnStr.indexOf(')')
 
-  var match = fnStr.slice(0, max || 100).match(/.*\(([^\)]*)\)/)
+  open = open >= 0 ? open + 1 : 0
+  close = close > 0 ? close : fnStr.indexOf('=')
+
+  fnStr = fnStr.slice(open, close)
+  fnStr = '(' + fnStr + ')'
+
+  var match = fnStr.match(/\(([\s\S]*)\)/)
   return match ? require('arr-map')(match[1].split(','), function (param) {
     return param.trim()
   }) : []

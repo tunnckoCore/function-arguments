@@ -41,27 +41,12 @@ test('should work when using comments', function (done) {
 test('should get array with arguments names from regular function', function () {
   test.deepEqual(fnArgs(function (a, b, c) {}), ['a', 'b', 'c'])
   test.deepEqual(fnArgs(function named (a, b, c) {}), ['a', 'b', 'c'])
+})
 
-  // those works on modern enviroment
+test('should get arguments of an arrow and generator functions', function (done) {
   test.deepEqual(fnArgs(a => {}), ['a']) // eslint-disable-line arrow-parens
   test.deepEqual(fnArgs((a, b) => {}), ['a', 'b'])
   test.deepEqual(fnArgs(function * (a, b, c) {}), ['a', 'b', 'c'])
   test.deepEqual(fnArgs(function * named (a, b, c) {}), ['a', 'b', 'c'])
-})
-
-test('should fail if `max` is bigger than fn.toString().length', function (done) {
-  function fixture (a, b) {
-    return [a, b]
-  }
-  test.deepEqual(fnArgs(fixture, 5555), ['a', 'b'])
-  done()
-})
-
-test('should `max` be number otherwise defaults to 100', function (done) {
-  function fixture (foo) {
-    return foo
-  }
-  test.deepEqual(fnArgs(fixture, 'str'), ['foo'])
-  test.deepEqual(fnArgs(fixture, '250'), ['foo'])
   done()
 })
