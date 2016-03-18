@@ -1,5 +1,9 @@
 
 
+## 1.0.2 - 2016-03-18
+- Release v1.0.2 / npm@v1.0.2
+- fix: if `max` bigger than `fn.toString().length`, causing strange bugs in `relike`?
+
 ## 1.0.1 - 2016-03-18
 - Release v1.0.1 / npm@v1.0.1
 - update docs
