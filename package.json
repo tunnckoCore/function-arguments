@@ -1,0 +1,66 @@
+{
+  "name": "function-arguments",
+  "version": "0.0.0",
+  "description": "Get function arguments, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.",
+  "repository": "tunnckoCore/function-arguments",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "arr-map": "^2.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "args",
+    "arguments",
+    "arrow",
+    "arrow-function",
+    "arrows",
+    "dependency",
+    "deps",
+    "fn",
+    "func",
+    "function",
+    "function-arguments",
+    "generator",
+    "generators",
+    "get",
+    "inject",
+    "injectors",
+    "parameters",
+    "params",
+    "regular",
+    "useful"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "parse-function",
+        "get-fn-name",
+        "fn-name",
+        "flatten-arguments",
+        "handle-arguments",
+        "manage-arguments"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
