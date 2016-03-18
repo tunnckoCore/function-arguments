@@ -49,3 +49,10 @@ test('should get array with arguments names from regular function', function () 
   test.deepEqual(fnArgs(function * named (a, b, c) {}), ['a', 'b', 'c'])
 })
 
+test('should fail if `max` is bigger than fn.toString().length', function (done) {
+  function fixture (a, b) {
+    return [a, b]
+  }
+  test.deepEqual(fnArgs(fixture, 5555), ['a', 'b'])
+  done()
+})

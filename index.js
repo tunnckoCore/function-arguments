@@ -48,6 +48,9 @@ module.exports = function functionArguments (fn, max) {
   if (fnStr[0] !== '(' && arrow) {
     fnStr = 'function (' + fnStr.slice(0, arrow) + ')' + fnStr.slice(arrow)
   }
+  if (max > fnStr.length) {
+    max = fnStr.length
+  }
 
   var match = fnStr.slice(0, Number(max) || 100).match(/.*\(([^\)]*)\)/)
   return match ? require('arr-map')(match[1].split(','), function (param) {
