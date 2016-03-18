@@ -27,6 +27,17 @@ test('should return empty array if not arguments', function (done) {
   done()
 })
 
+test('should work when using comments', function (done) {
+  test.deepEqual(fnArgs(function /* something */ (
+    // go,
+    go,
+    /* wrong, */
+    here
+    // (when, using, comments) {}
+  ) {}), ['go', 'here'])
+  done()
+})
+
 test('should get array with arguments names from regular function', function () {
   test.deepEqual(fnArgs(function (a, b, c) {}), ['a', 'b', 'c'])
   test.deepEqual(fnArgs(function named (a, b, c) {}), ['a', 'b', 'c'])

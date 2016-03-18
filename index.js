@@ -39,8 +39,10 @@ module.exports = function functionArguments (fn, max) {
     return []
   }
 
+  // from https://github.com/jrburke/requirejs
+  var reComments = /(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg
   var fnToStr = Function.prototype.toString
-  var fnStr = fnToStr.call(fn)
+  var fnStr = fnToStr.call(fn).replace(reComments, '')
   var arrow = fnStr.indexOf('=>')
 
   if (fnStr[0] !== '(' && arrow) {
