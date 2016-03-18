@@ -1,6 +1,6 @@
 {
   "name": "function-arguments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get arguments of a function, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.",
   "repository": "tunnckoCore/function-arguments",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
