@@ -1,5 +1,9 @@
 
 
+## 1.0.3 - 2016-03-18
+- Release v1.0.3 / npm@v1.0.3
+- fix `options.max` problems, make some checks and defaults
+
 ## 1.0.2 - 2016-03-18
 - Release v1.0.2 / npm@v1.0.2
 - fix: if `max` bigger than `fn.toString().length`, causing strange bugs in `relike`?
