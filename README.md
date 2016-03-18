@@ -40,8 +40,22 @@ console.log(fnArgs(function * (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
 console.log(fnArgs(function * named (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
 ```
 
+### Works when using comments
+> As it works for ES2015, it also works if you use comments in weird places.
+
+```js
+console.log(fnArgs(function /* something may */ (
+  // go,
+  go,
+  /* wrong, */
+  here
+  // (when, using, comments) {}
+) { return 1 })) // => [ 'go', 'here' ]
+```
+
 ## Related
 * [flatten-arguments](https://www.npmjs.com/package/flatten-arguments): Fastest, simplest and smallest. Pass `arguments` object or list… [more](https://www.npmjs.com/package/flatten-arguments) | [homepage](https://github.com/tunnckocore/flatten-arguments)
+* [fn-args](https://www.npmjs.com/package/fn-args): Get the arguments of a function | [homepage](https://github.com/sindresorhus/fn-args)
 * [fn-name](https://www.npmjs.com/package/fn-name): Get the name of a named function | [homepage](https://github.com/sindresorhus/fn-name)
 * [get-fn-name](https://www.npmjs.com/package/get-fn-name): Get function name with strictness and correctness in mind.… [more](https://www.npmjs.com/package/get-fn-name) | [homepage](https://github.com/tunnckocore/get-fn-name)
 * [handle-arguments](https://www.npmjs.com/package/handle-arguments): Handles given Arguments object - return separatly last argument… [more](https://www.npmjs.com/package/handle-arguments) | [homepage](https://github.com/hybridables/handle-arguments)

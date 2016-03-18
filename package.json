@@ -56,7 +56,8 @@
         "fn-name",
         "flatten-arguments",
         "handle-arguments",
-        "manage-arguments"
+        "manage-arguments",
+        "fn-args"
       ]
     },
     "lint": {
