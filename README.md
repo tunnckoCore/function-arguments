@@ -16,13 +16,12 @@ npm i function-arguments --save
 const functionArguments = require('function-arguments')
 ```
 
-### [functionArguments](index.js#L34)
+### [functionArguments](index.js#L33)
 > Get function arguments names.
 
 **Params**
 
 * `fn` **{Function}**: Function from which to get arguments names.    
-* `max` **{Number}**: How many characters to cut from `fn`s toString.    
 * `returns` **{Array}**  
 
 **Example**
@@ -71,6 +70,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
 
 [arr-map]: https://github.com/jonschlinkert/arr-map
+[is-number]: https://github.com/jonschlinkert/is-number
 
 [npmjs-url]: https://www.npmjs.com/package/function-arguments
 [npmjs-img]: https://img.shields.io/npm/v/function-arguments.svg?label=function-arguments
