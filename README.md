@@ -1,6 +1,6 @@
 # [function-arguments][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Get function arguments, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.
+> Get arguments of a function, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -22,7 +22,7 @@ const functionArguments = require('function-arguments')
 **Params**
 
 * `fn` **{Function}**: Function from which to get arguments names.    
-* `max` **{Number}**: How many characters to cut from `fn` toString.    
+* `max` **{Number}**: How many characters to cut from `fn`s toString.    
 * `returns` **{Array}**  
 
 **Example**
