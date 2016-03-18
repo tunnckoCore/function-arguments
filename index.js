@@ -35,6 +35,10 @@ module.exports = function functionArguments (fn, max) {
   if (typeof fn !== 'function') {
     throw new TypeError('function-arguments expect a function')
   }
+  if (fn.length === 0) {
+    return []
+  }
+
   var fnToStr = Function.prototype.toString
   var fnStr = fnToStr.call(fn)
   var arrow = fnStr.indexOf('=>')
@@ -44,13 +48,7 @@ module.exports = function functionArguments (fn, max) {
   }
 
   var match = fnStr.slice(0, Number(max) || 100).match(/.*\(([^\)]*)\)/)
-
-  /* istanbul ignore next */
-  if (!match) {
-    return []
-  }
-
-  return require('arr-map')(match[1].split(','), function (param) {
+  return match ? require('arr-map')(match[1].split(','), function (param) {
     return param.trim()
-  })
+  }) : []
 }

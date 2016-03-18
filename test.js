@@ -22,6 +22,11 @@ test('should throw if not a function is passed', function (done) {
   done()
 })
 
+test('should return empty array if not arguments', function (done) {
+  test.deepEqual(fnArgs(function () {}), [])
+  done()
+})
+
 test('should get array with arguments names from regular function', function () {
   test.deepEqual(fnArgs(function (a, b, c) {}), ['a', 'b', 'c'])
   test.deepEqual(fnArgs(function named (a, b, c) {}), ['a', 'b', 'c'])
