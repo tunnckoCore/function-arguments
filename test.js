@@ -56,3 +56,12 @@ test('should fail if `max` is bigger than fn.toString().length', function (done)
   test.deepEqual(fnArgs(fixture, 5555), ['a', 'b'])
   done()
 })
+
+test('should `max` be number otherwise defaults to 100', function (done) {
+  function fixture (foo) {
+    return foo
+  }
+  test.deepEqual(fnArgs(fixture, 'str'), ['foo'])
+  test.deepEqual(fnArgs(fixture, '250'), ['foo'])
+  done()
+})

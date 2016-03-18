@@ -44,15 +44,21 @@ module.exports = function functionArguments (fn, max) {
   var fnToStr = Function.prototype.toString
   var fnStr = fnToStr.call(fn).replace(reComments, '')
   var arrow = fnStr.indexOf('=>')
+  var isNumber = require('is-number')
 
   if (fnStr[0] !== '(' && arrow) {
     fnStr = 'function (' + fnStr.slice(0, arrow) + ')' + fnStr.slice(arrow)
   }
-  if (max > fnStr.length) {
+  if (isNumber(max)) {
+    max = Number(max)
+  } else {
+    max = false
+  }
+  if (max && max > fnStr.length) {
     max = fnStr.length
   }
 
-  var match = fnStr.slice(0, Number(max) || 100).match(/.*\(([^\)]*)\)/)
+  var match = fnStr.slice(0, max || 100).match(/.*\(([^\)]*)\)/)
   return match ? require('arr-map')(match[1].split(','), function (param) {
     return param.trim()
   }) : []
