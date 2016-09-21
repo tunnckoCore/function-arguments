@@ -1,5 +1,14 @@
 
 
+## 1.0.5 - 2016-09-21
+- Release v1.0.5 / npm@v1.0.5
+- move arr-map require outside of the module.exported function, closes #3
+- update to use `mukla` instead of `assertit`
+- update npm scripts
+- update travis builds and coverage things
+- update gitignore
+- add `standard` and `nyc` to devDeps
+
 ## 1.0.4 - 2016-03-18
 - Release v1.0.4 / npm@v1.0.4
 - update docs
