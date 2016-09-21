@@ -1,5 +1,9 @@
 
 
+## 1.0.6 - 2016-09-21
+- Release v1.0.6 / npm@v1.0.6
+- add `coveralls` to devDeps, closes #4
+
 ## 1.0.5 - 2016-09-21
 - Release v1.0.5 / npm@v1.0.5
 - move arr-map require outside of the module.exported function, closes #3
