@@ -8,14 +8,22 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "standard && node test.js"
+    "lint": "standard --verbose",
+    "pretest": "npm run lint",
+    "test": "npm run coverage",
+    "posttest": "npm run lint:coverage",
+    "coverage": "nyc node test.js",
+    "lint:coverage": "nyc check-coverage --statements 100 --functions 100 --lines 100",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "arr-map": "^2.0.0"
   },
   "devDependencies": {
     "mukla": "^0.4.4",
-    "pre-commit": "^1.1.3"
+    "nyc": "^8.3.0",
+    "pre-commit": "^1.1.3",
+    "standard": "^8.1.0"
   },
   "files": [
     "index.js"
