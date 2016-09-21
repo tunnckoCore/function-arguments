@@ -16,7 +16,7 @@ npm i function-arguments --save
 const functionArguments = require('function-arguments')
 ```
 
-### [functionArguments](index.js#L33)
+### [functionArguments](index.js#L35)
 > Get function arguments names.
 
 **Params**
@@ -53,13 +53,13 @@ console.log(fnArgs(function /* something may */ (
 ```
 
 ## Related
-* [flatten-arguments](https://www.npmjs.com/package/flatten-arguments): Fastest, simplest and smallest. Pass `arguments` object or list… [more](https://www.npmjs.com/package/flatten-arguments) | [homepage](https://github.com/tunnckocore/flatten-arguments)
-* [fn-args](https://www.npmjs.com/package/fn-args): Get the arguments of a function | [homepage](https://github.com/sindresorhus/fn-args)
-* [fn-name](https://www.npmjs.com/package/fn-name): Get the name of a named function | [homepage](https://github.com/sindresorhus/fn-name)
-* [get-fn-name](https://www.npmjs.com/package/get-fn-name): Get function name with strictness and correctness in mind.… [more](https://www.npmjs.com/package/get-fn-name) | [homepage](https://github.com/tunnckocore/get-fn-name)
-* [handle-arguments](https://www.npmjs.com/package/handle-arguments): Handles given Arguments object - return separatly last argument… [more](https://www.npmjs.com/package/handle-arguments) | [homepage](https://github.com/hybridables/handle-arguments)
-* [manage-arguments](https://www.npmjs.com/package/manage-arguments): Prevents arguments leakage - managing arguments. From Optimization killers… [more](https://www.npmjs.com/package/manage-arguments) | [homepage](https://github.com/tunnckocore/manage-arguments)
-* [parse-function](https://www.npmjs.com/package/parse-function): Parse a function, arrow function or string to object… [more](https://www.npmjs.com/package/parse-function) | [homepage](https://github.com/tunnckocore/parse-function)
+- [flatten-arguments](https://www.npmjs.com/package/flatten-arguments): Fastest, simplest and smallest. Pass `arguments` object or list… [more](https://github.com/tunnckocore/flatten-arguments#readme) | [homepage](https://github.com/tunnckocore/flatten-arguments#readme "Fastest, simplest and smallest. Pass `arguments` object or list of arguments and get flattened array.")
+- [fn-args](https://www.npmjs.com/package/fn-args): Get the arguments of a function | [homepage](https://github.com/sindresorhus/fn-args "Get the arguments of a function")
+- [fn-name](https://www.npmjs.com/package/fn-name): Get the name of a named function | [homepage](https://github.com/sindresorhus/fn-name "Get the name of a named function")
+- [get-fn-name](https://www.npmjs.com/package/get-fn-name): Get function name with strictness and correctness in mind… [more](https://github.com/tunnckocore/get-fn-name#readme) | [homepage](https://github.com/tunnckocore/get-fn-name#readme "Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions. Powered by [fn-name][].")
+- [handle-arguments](https://www.npmjs.com/package/handle-arguments): Get separately non-callback arguments in `.arguments` and the last… [more](https://github.com/hybridables/handle-arguments#readme) | [homepage](https://github.com/hybridables/handle-arguments#readme "Get separately non-callback arguments in `.arguments` and the last argument if it [is-callback-function][] in `.callback`. It also works like [sliced][], but returns object with `.arguments` and `.callback` properties.")
+- [manage-arguments](https://www.npmjs.com/package/manage-arguments): Prevents arguments leakage - managing arguments. From Optimization killers… [more](https://github.com/tunnckocore/manage-arguments#readme) | [homepage](https://github.com/tunnckocore/manage-arguments#readme "Prevents arguments leakage - managing arguments. From Optimization killers by Petka Antonov.")
+- [parse-function](https://www.npmjs.com/package/parse-function): Parse a function, arrow function or string to object… [more](https://github.com/tunnckocore/parse-function#readme) | [homepage](https://github.com/tunnckocore/parse-function#readme "Parse a function, arrow function or string to object with name, args, params and body properties.")
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/function-arguments/issues/new).  
@@ -69,8 +69,9 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
 
-[arr-map]: https://github.com/jonschlinkert/arr-map
-[is-number]: https://github.com/jonschlinkert/is-number
+[fn-name]: https://github.com/sindresorhus/fn-name
+[is-callback-function]: https://github.com/tunnckocore/is-callback-function
+[sliced]: https://github.com/aheckmann/sliced
 
 [npmjs-url]: https://www.npmjs.com/package/function-arguments
 [npmjs-img]: https://img.shields.io/npm/v/function-arguments.svg?label=function-arguments
