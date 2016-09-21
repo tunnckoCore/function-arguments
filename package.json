@@ -14,7 +14,7 @@
     "arr-map": "^2.0.0"
   },
   "devDependencies": {
-    "assertit": "^0.1.0",
+    "mukla": "^0.4.4",
     "pre-commit": "^1.1.3"
   },
   "files": [

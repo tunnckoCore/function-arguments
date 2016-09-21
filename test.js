@@ -9,7 +9,7 @@
 
 'use strict'
 
-var test = require('assertit')
+var test = require('mukla')
 var fnArgs = require('./index')
 
 test('should throw if not a function is passed', function (done) {
@@ -38,9 +38,10 @@ test('should work when using comments', function (done) {
   done()
 })
 
-test('should get array with arguments names from regular function', function () {
+test('should get array with arguments names from regular function', function (done) {
   test.deepEqual(fnArgs(function (a, b, c) {}), ['a', 'b', 'c'])
   test.deepEqual(fnArgs(function named (a, b, c) {}), ['a', 'b', 'c'])
+  done()
 })
 
 test('should get arguments of an arrow and generator functions', function (done) {
