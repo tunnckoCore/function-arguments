@@ -56,6 +56,11 @@
     "regular",
     "useful"
   ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "verb": {
     "run": true,
     "toc": false,
