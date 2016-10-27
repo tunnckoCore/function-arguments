@@ -7,8 +7,6 @@
 
 'use strict'
 
-var arrMap = require('arr-map')
-
 /**
  * > Get function arguments names.
  *
@@ -57,7 +55,7 @@ module.exports = function functionArguments (fn) {
   fnStr = '(' + fnStr + ')'
 
   var match = fnStr.match(/\(([\s\S]*)\)/)
-  return match ? arrMap(match[1].split(','), function (param) {
+  return match ? match[1].split(',').map(function (param) {
     return param.trim()
   }) : []
 }

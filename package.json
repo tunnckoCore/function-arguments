@@ -20,9 +20,7 @@
     "precommit": "git add --all",
     "commit": "git-cz"
   },
-  "dependencies": {
-    "arr-map": "^2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "commitizen": "^2.8.6",
     "coveralls": "^2.11.12",
