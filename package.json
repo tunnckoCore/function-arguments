@@ -13,18 +13,25 @@
     "test": "npm run coverage",
     "posttest": "npm run lint:coverage",
     "coverage": "nyc node test.js",
-    "lint:coverage": "nyc check-coverage --statements 100 --functions 100 --lines 100",
-    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
+    "lint:coverage": "nyc check-coverage --lines 100 --branches 83 --statements 100 --functions 100",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prerelease": "npm test",
+    "release": "standard-version --sign --no-verify",
+    "precommit": "git add --all",
+    "commit": "git-cz"
   },
   "dependencies": {
     "arr-map": "^2.0.0"
   },
   "devDependencies": {
-    "coveralls": "^2.11.14",
-    "mukla": "^0.4.4",
-    "nyc": "^8.3.0",
+    "commitizen": "^2.8.6",
+    "coveralls": "^2.11.12",
+    "cz-conventional-changelog": "^1.2.0",
+    "mukla": "^0.4.1",
+    "nyc": "^8.1.0",
     "pre-commit": "^1.1.3",
-    "standard": "^8.1.0"
+    "standard": "^8.4.0",
+    "standard-version": "^2.4.0"
   },
   "files": [
     "index.js"
