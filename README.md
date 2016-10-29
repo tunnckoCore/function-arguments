@@ -23,6 +23,11 @@ const functionArguments = require('function-arguments')
 ### [functionArguments](index.js#L33)
 > Get function arguments names.
 
+**Params**
+
+* `fn` **{Function}**: Function from which to get arguments names.    
+* `returns` **{Array}**  
+
 **Example**
 
 ```js
@@ -37,11 +42,6 @@ console.log(fnArgs((a, b) => {})) // => [ 'a', 'b' ]
 console.log(fnArgs(function * (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
 console.log(fnArgs(function * named (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
 ```
-
-**Params**
-
-* `fn` **{Function}**: Function from which to get arguments names.    
-* `returns` **{Array}**  
 
 ### Works when using comments
 > As it works for ES2015, it also works if you use comments in weird places.
