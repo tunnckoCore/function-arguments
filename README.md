@@ -33,14 +33,17 @@ const functionArguments = require('function-arguments')
 ```js
 var fnArgs = require('function-arguments')
 
-console.log(fnArgs(function (a, b, c) {})) // => [ 'a', 'b', 'c' ]
-console.log(fnArgs(function named (a , b, c) {})) // => [ 'a', 'b', 'c' ]
+console.log(fnArgs(function (a, b, c = 42) {})) // => [ 'a', 'b', 'c' ]
+console.log(fnArgs(function named (a , b, c = 42) {})) // => [ 'a', 'b', 'c' ]
 
 console.log(fnArgs(a => {})) // => [ 'a' ]
-console.log(fnArgs((a, b) => {})) // => [ 'a', 'b' ]
+console.log(fnArgs((a, b = 42) => {})) // => [ 'a', 'b' ]
 
-console.log(fnArgs(function * (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
-console.log(fnArgs(function * named (a ,b, c) {})) // => [ 'a', 'b', 'c' ]
+console.log(fnArgs(function * (a, b, c = 42) {})) // => [ 'a', 'b', 'c' ]
+console.log(fnArgs(function * named (a, b, c = 42) {})) // => [ 'a', 'b', 'c' ]
+
+console.log(fnArgs(async function (a, b, c = 42) {})) // => [ 'a', 'b', 'c' ]
+console.log(fnArgs(async function named (a , b, c = 42) {})) // => [ 'a', 'b', 'c' ]
 ```
 
 ### Works when using comments
