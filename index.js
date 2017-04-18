@@ -56,6 +56,8 @@ module.exports = function functionArguments (fn) {
 
   var match = fnStr.match(/\(([\s\S]*)\)/)
   return match ? match[1].split(',').map(function (param) {
+    var idx
+    if ((idx = param.indexOf('=')) !== -1) param = param.slice(0, idx)
     return param.trim()
   }) : []
 }

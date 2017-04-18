@@ -51,3 +51,18 @@ test('should get arguments of an arrow and generator functions', function (done)
   test.deepEqual(fnArgs(function * named (a, b, c) {}), ['a', 'b', 'c'])
   done()
 })
+
+test('should get arguments of an async functions', function (done) {
+  test.deepEqual(fnArgs(async function (a, b, c) {}), ['a', 'b', 'c'])
+  test.deepEqual(fnArgs(async function named (a, b, c) {}), ['a', 'b', 'c'])
+  done()
+})
+
+test('should get array with arguments names from function with default parameters', function (done) {
+  test.deepEqual(fnArgs(function (a, b = '=foo', c = 42) {}), ['a', 'b', 'c'])
+  test.deepEqual(fnArgs(function named (a, b = '=foo', c = 42) {}), ['a', 'b', 'c'])
+  test.deepEqual(fnArgs((a, b = '=foo', c = 42) => {}), ['a', 'b', 'c'])
+  test.deepEqual(fnArgs(function * (a, b = '=foo', c = 42) {}), ['a', 'b', 'c'])
+  test.deepEqual(fnArgs(function * named (a, b = '=foo', c = 42) {}), ['a', 'b', 'c'])
+  done()
+})
