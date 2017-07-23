@@ -30,7 +30,7 @@
  * @api public
  */
 
-module.exports = function functionArguments (fn) {
+module.exports = function functionArguments (fn, str) {
   if (typeof fn !== 'function') {
     throw new TypeError('function-arguments expect a function')
   }
@@ -40,8 +40,7 @@ module.exports = function functionArguments (fn) {
 
   // from https://github.com/jrburke/requirejs
   var reComments = /(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg
-  var fnToStr = Function.prototype.toString
-  var fnStr = fnToStr.call(fn)
+  var fnStr = str || fn.toString();
   fnStr = fnStr.replace(reComments, '') || fnStr
   fnStr = fnStr.slice(0, fnStr.indexOf('{'))
 
