@@ -40,7 +40,7 @@ module.exports = function functionArguments (fn, str) {
 
   // from https://github.com/jrburke/requirejs
   var reComments = /(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg
-  var fnStr = str || fn.toString();
+  var fnStr = str || fn.toString()
   fnStr = fnStr.replace(reComments, '') || fnStr
   fnStr = fnStr.slice(0, fnStr.indexOf('{'))
 
