@@ -1,8 +1,14 @@
-# [function-arguments][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url] 
+# function-arguments [![npm version][npmv-img]][npmv-url] [![github release][github-release-img]][github-release-url] [![License][license-img]][license-url]
 
 > Get arguments of a function, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.
 
-[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
+[![code style][standard-img]][standard-url] 
+[![linux build][travis-img]][travis-url] 
+[![windows build][appveyor-img]][appveyor-url] 
+[![code coverage][coverage-img]][coverage-url] 
+[![dependency status][david-img]][david-url] 
+[![npm downloads][downloads-img]][downloads-url] 
+[![paypal donate][paypalme-img]][paypalme-url] 
 
 ## Install
 > Install with [npm](https://www.npmjs.com/)
@@ -77,17 +83,8 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [is-callback-function]: https://github.com/tunnckocore/is-callback-function
 [sliced]: https://github.com/aheckmann/sliced
 
-[npmjs-url]: https://www.npmjs.com/package/function-arguments
-[npmjs-img]: https://img.shields.io/npm/v/function-arguments.svg?label=function-arguments
-
-[license-url]: https://github.com/tunnckoCore/function-arguments/blob/master/LICENSE
-[license-img]: https://img.shields.io/npm/l/function-arguments.svg
-
 [downloads-url]: https://www.npmjs.com/package/function-arguments
 [downloads-img]: https://img.shields.io/npm/dm/function-arguments.svg
-
-[codeclimate-url]: https://codeclimate.com/github/tunnckoCore/function-arguments
-[codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/function-arguments.svg
 
 [travis-url]: https://travis-ci.org/tunnckoCore/function-arguments
 [travis-img]: https://img.shields.io/travis/tunnckoCore/function-arguments/master.svg
@@ -121,4 +118,16 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [new-message-url]: https://github.com/tunnckoCore/ama
 [new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
+
+
+<!-- -->
+
+[npmv-url]: https://www.npmjs.com/package/arr-includes
+[npmv-img]: https://img.shields.io/npm/v/arr-includes.svg?label=npm%20version
+
+[github-release-url]: https://github.com/olstenlarck/arr-includes/releases/latest
+[github-release-img]: https://img.shields.io/github/tag/olstenlarck/arr-includes.svg?label=github%20tag
+
+[license-url]: https://github.com/olstenlarck/arr-includes/blob/master/LICENSE
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
