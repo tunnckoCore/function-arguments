@@ -4,7 +4,6 @@
 
 [![code style][standard-img]][standard-url] 
 [![linux build][travis-img]][travis-url] 
-[![windows build][appveyor-img]][appveyor-url] 
 [![code coverage][coverage-img]][coverage-url] 
 [![dependency status][david-img]][david-url] 
 [![npm downloads][downloads-img]][downloads-url] 
@@ -86,11 +85,11 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [downloads-url]: https://www.npmjs.com/package/function-arguments
 [downloads-img]: https://img.shields.io/npm/dm/function-arguments.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/function-arguments
-[travis-img]: https://img.shields.io/travis/tunnckoCore/function-arguments/master.svg
+[travis-url]: https://travis-ci.org/olstenlarck/function-arguments
+[travis-img]: https://img.shields.io/travis/olstenlarck/function-arguments/master.svg
 
-[coveralls-url]: https://coveralls.io/r/tunnckoCore/function-arguments
-[coveralls-img]: https://img.shields.io/coveralls/tunnckoCore/function-arguments.svg
+[coverage-url]: https://coveralls.io/r/tunnckoCore/function-arguments
+[coverage-img]: https://img.shields.io/coveralls/tunnckoCore/function-arguments.svg
 
 [david-url]: https://david-dm.org/tunnckoCore/function-arguments
 [david-img]: https://img.shields.io/david/tunnckoCore/function-arguments.svg
@@ -122,12 +121,15 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 <!-- -->
 
-[npmv-url]: https://www.npmjs.com/package/arr-includes
-[npmv-img]: https://img.shields.io/npm/v/arr-includes.svg?label=npm%20version
+[paypalme-url]: https://www.paypal.me/tunnckoCore
+[paypalme-img]: https://img.shields.io/badge/paypal-donate-brightgreen.svg
 
-[github-release-url]: https://github.com/olstenlarck/arr-includes/releases/latest
-[github-release-img]: https://img.shields.io/github/tag/olstenlarck/arr-includes.svg?label=github%20tag
+[npmv-url]: https://www.npmjs.com/package/function-arguments
+[npmv-img]: https://img.shields.io/npm/v/function-arguments.svg?label=npm%20version
 
-[license-url]: https://github.com/olstenlarck/arr-includes/blob/master/LICENSE
+[github-release-url]: https://github.com/olstenlarck/function-arguments/releases/latest
+[github-release-img]: https://img.shields.io/github/tag/olstenlarck/function-arguments.svg?label=github%20tag
+
+[license-url]: https://github.com/olstenlarck/function-arguments/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
