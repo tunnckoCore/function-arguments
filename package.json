@@ -6,6 +6,8 @@
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "precommit.silent": true,
   "main": "index.js",
+  "types": "index.d.ts",
+  "typings": "index.d.ts",
   "license": "MIT",
   "scripts": {
     "lint": "standard --verbose",
@@ -32,7 +34,8 @@
     "standard-version": "^2.4.0"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "args",
