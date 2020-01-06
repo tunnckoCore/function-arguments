@@ -85,8 +85,8 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [downloads-url]: https://www.npmjs.com/package/function-arguments
 [downloads-img]: https://img.shields.io/npm/dm/function-arguments.svg
 
-[travis-url]: https://travis-ci.org/olstenlarck/function-arguments
-[travis-img]: https://img.shields.io/travis/olstenlarck/function-arguments/master.svg
+[travis-url]: https://travis-ci.org/tunnckoCore/function-arguments
+[travis-img]: https://img.shields.io/travis/tunnckoCore/function-arguments/master.svg
 
 [coverage-url]: https://coveralls.io/r/tunnckoCore/function-arguments
 [coverage-img]: https://img.shields.io/coveralls/tunnckoCore/function-arguments.svg
@@ -121,15 +121,15 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 <!-- -->
 
-[paypalme-url]: https://www.paypal.me/tunnckoCore
-[paypalme-img]: https://img.shields.io/badge/paypal-donate-brightgreen.svg
+[paypalme-url]: https://ko-fi.com/tunnckoCore
+[paypalme-img]: https://img.shields.io/badge/support-donate-brightgreen.svg
 
 [npmv-url]: https://www.npmjs.com/package/function-arguments
 [npmv-img]: https://img.shields.io/npm/v/function-arguments.svg?label=npm%20version
 
-[github-release-url]: https://github.com/olstenlarck/function-arguments/releases/latest
-[github-release-img]: https://img.shields.io/github/tag/olstenlarck/function-arguments.svg?label=github%20tag
+[github-release-url]: https://github.com/tunnckoCore/function-arguments/releases/latest
+[github-release-img]: https://img.shields.io/github/tag/tunnckoCore/function-arguments.svg?label=github%20tag
 
-[license-url]: https://github.com/olstenlarck/function-arguments/blob/master/LICENSE
+[license-url]: https://github.com/tunnckoCore/function-arguments/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
