@@ -2,12 +2,12 @@
 
 > Get arguments of a function, useful for and used in dependency injectors. Works for regular functions, generator functions and arrow functions.
 
-[![code style][standard-img]][standard-url] 
-[![linux build][travis-img]][travis-url] 
-[![code coverage][coverage-img]][coverage-url] 
-[![dependency status][david-img]][david-url] 
-[![npm downloads][downloads-img]][downloads-url] 
-[![paypal donate][paypalme-img]][paypalme-url] 
+[![code style][standard-img]][standard-url]
+[![linux build][travis-img]][travis-url]
+[![code coverage][coverage-img]][coverage-url]
+[![dependency status][david-img]][david-url]
+[![npm downloads][downloads-img]][downloads-url]
+[![paypal donate][paypalme-img]][paypalme-url]
 
 ## Install
 > Install with [npm](https://www.npmjs.com/)
@@ -15,6 +15,8 @@
 ```
 $ npm i function-arguments --save
 ```
+
+_**Important:** for more advanced stuff please use [parse-function][], don't suggest features or complex bugs._
 
 ## Usage
 > For more use-cases see the [tests](./test.js)
@@ -30,8 +32,8 @@ const functionArguments = require('function-arguments')
 
 **Params**
 
-* `fn` **{Function}**: Function from which to get arguments names.    
-* `returns` **{Array}**  
+* `fn` **{Function}**: Function from which to get arguments names.
+* `returns` **{Array}**
 
 **Example**
 
@@ -71,7 +73,7 @@ console.log(fnArgs(function /* something may */ (
 - [parse-function](https://www.npmjs.com/package/parse-function): Parse a function, arrow function or string to object with… [more](https://github.com/tunnckocore/parse-function#readme) | [homepage](https://github.com/tunnckocore/parse-function#readme "Parse a function, arrow function or string to object with name, args, params and body properties.")
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/function-arguments/issues/new).  
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/function-arguments/issues/new).
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
 ## [Charlike Make Reagent](http://j.mp/1stW47C) [![new message to charlike][new-message-img]][new-message-url] [![freenode #charlike][freenode-img]][freenode-url]
@@ -118,7 +120,6 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [new-message-url]: https://github.com/tunnckoCore/ama
 [new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
 
-
 <!-- -->
 
 [paypalme-url]: https://ko-fi.com/tunnckoCore
@@ -133,3 +134,4 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [license-url]: https://github.com/tunnckoCore/function-arguments/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
+[parse-function]: https://tunnckocore.com/opensource
