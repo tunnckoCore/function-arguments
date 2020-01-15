@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/tunnckocore/function-arguments/compare/v1.0.8...v1.0.9) (2020-01-15)
+
+
+### Bug Fixes
+
+* add funding + note for parse-function ([0e0d074](https://github.com/tunnckocore/function-arguments/commit/0e0d074))
+* add type files to distributed package ([2a7c839](https://github.com/tunnckocore/function-arguments/commit/2a7c839))
+* add TypeScript files - index.d.ts (#11) ([8619796](https://github.com/tunnckocore/function-arguments/commit/8619796))
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/tunnckocore/function-arguments/compare/v1.0.7...v1.0.8) (2016-10-29)
 
