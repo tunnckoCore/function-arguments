@@ -7,6 +7,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [master]
   schedule:
+    # weekly (at 11:00 on Sunday)
     - cron: '0 11 * * 0'
 
 jobs:
